@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper, openany]{book}
+
+% =========================
+% PACKAGES
+% =========================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{hyperref}
+% =========================
+% For APA referencing
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+
+% Add your .bib file
+\addbibresource{business_studies_form_4.bib}
+
+% =========================
+% BEGIN DOCUMENT
+% =========================
+\begin{document}
+
+% ---- FRONT MATTER ----
+\frontmatter
+\title{Business Studies \\ form 4}
+\author{Sir Brown}
+\date{\today}
+
+\maketitle
+
+\chapter*{Dedication}
+To all learners of data and knowledge.
+
+\chapter*{Preface}
+\lipsum[1] % placeholder text
+
+\tableofcontents
+
+% ---- MAIN MATTER ----
+\mainmatter
+\chapter{Introduction}
+\section{Background}
+\lipsum[2]
+
+\section{Motivation}
+\lipsum[3]
+
+\chapter{Data Analytics Journey}
+\section{Learning Python}
+\lipsum[4]
+
+\section{Building Projects}
+\lipsum[5]
+
+% ---- BACK MATTER ----
+\backmatter
+%\chapter*{Appendix}
+%\lipsum[6]
+
+\nocite{*}
+\printbibliography{}
+\end{document}
+
